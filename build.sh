@@ -88,10 +88,10 @@ CWD=$(pwd)
 
 # clone or pull trinity src
 if [ ! -d $SRC_FOLDER ]; then
-    git clone -b 3.3.5 https://github.com/TrinityCore/TrinityCore.git $SRC_FOLDER 
+    git clone -b ReloadOneCreature git@github.com:rozalba-ng/noble-core.git $SRC_FOLDER 
 else
     cd $SRC_FOLDER
-    git checkout 3.3.5
+    git checkout ReloadOneCreature
     git reset --hard
     git clean -f
     git pull
