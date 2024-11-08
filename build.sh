@@ -102,7 +102,7 @@ cd $SRC_FOLDER
 
 # figure out the latest tag in trinity src. We build tags and tags only, because that's how civilized people 
 # distribute stuff
-BUILD_TAG = TDB335.24081
+BUILD_TAG=TDB335.24081
 #if [ -z "$BUILD_TAG" ]; then
 #    BUILD_TAG=$(git describe --tags --abbrev=0) 
 #fi
