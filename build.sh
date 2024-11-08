@@ -102,9 +102,10 @@ cd $SRC_FOLDER
 
 # figure out the latest tag in trinity src. We build tags and tags only, because that's how civilized people 
 # distribute stuff
-if [ -z "$BUILD_TAG" ]; then
-    BUILD_TAG=$(git describe --tags --abbrev=0) 
-fi
+BUILD_TAG = TDB335.24081
+#if [ -z "$BUILD_TAG" ]; then
+#    BUILD_TAG=$(git describe --tags --abbrev=0) 
+#fi
 
 # Now that we have the tag, check it out
 git checkout $BUILD_TAG
@@ -112,7 +113,7 @@ git checkout $BUILD_TAG
 
 # construct the name of the full database file for this tag. Trinity expects this honking big sql file to be 
 # placed in its /bin folder
-TAG_DATE=$(git log -1 --format=%ai $BUILD_TAG)
+TAG_DATE=2024-08-17
 TAG_DATE=${TAG_DATE:0:10}
 TAG_DATE=${TAG_DATE//-/_}
 FULL_DATABASE_FRAGMENT="${BUILD_TAG}/TDB_full_world_${BUILD_TAG/TDB/}_${TAG_DATE}"
