@@ -108,7 +108,7 @@ BUILD_TAG=TDB335.24081
 #fi
 
 # Now that we have the tag, check it out
-git checkout $BUILD_TAG
+#git checkout $BUILD_TAG
 
 
 # construct the name of the full database file for this tag. Trinity expects this honking big sql file to be 
